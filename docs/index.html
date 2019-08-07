@@ -9,10 +9,21 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav>
+  <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
       loadSidebar: true, // 使用自定义导航栏
+      coverpage: true,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '没有记录!'
+      },
       name: 'webAbility',
       repo: ''
     }
